@@ -5,6 +5,22 @@
 // 7 -> да
 // 1 -> нет
 
+Console.Write("Введите цифру обозначающую день недели от 1 до 7: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num == 6 | num == 7)
+{
+    Console.WriteLine("Этот день является выходным ");
+}
+else if (num > 0 & num < 6)
+{
+    Console.WriteLine("Это будний день ");
+}
+else
+{
+    Console.WriteLine("Введено не корректрое число ! ");
+}
+
 
 
 
