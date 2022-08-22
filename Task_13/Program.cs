@@ -5,6 +5,28 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num > 99 & num < 1000)
+{
+    int rem = (num % 100) % 10;
+    Console.WriteLine($"Третия цифра этого числа: {rem}");
+}
+else if (num > 999 & num < 10000)
+{
+    int rem = (num % 1000) % 100 / 10;
+    Console.WriteLine($"Третия цифра этого числа: {rem}");
+}
+else if (num > 9999 & num < 100000)
+{
+    int rem = (num % 10000) % 1000 / 100;
+    Console.WriteLine($"Третия цифра этого числа: {rem}");
+}
+else
+{
+    Console.WriteLine("Третьей цифры нет !");
+}
+
 
 
 
