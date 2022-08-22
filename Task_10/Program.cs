@@ -5,3 +5,7 @@
 // 782 -> 8
 // 918 -> 1
 
+Console.WriteLine("Введите трехзначное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int rem = (num % 100) / 10;
+Console.WriteLine($"Вторая цифра этого числа: {rem}");
